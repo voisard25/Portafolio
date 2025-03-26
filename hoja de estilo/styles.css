@@ -36,6 +36,28 @@ header{
     color:brown;
     text-shadow: 2px 2px 4px black, -2px -2px 4px gray;
 }
+/* Media query para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .logo {
+        font-size: 28px;
+    }
+
+    .contenedor-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenedor-lista {
+        margin: 10px 0;
+    }
+}
+
 /*SECCION I N I C I O*/
 .inicio{
     background: linear-gradient(to top, rgba(255, 239, 184, 0.8), rgba(255, 239, 184, 0.8)), url(../imagenes/fondo.jpg);
@@ -90,6 +112,32 @@ header{
     background-color: wheat;
     color: brown;
 }
+@media screen and (max-width: 768px) {
+    .inicio {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        padding: 20px;
+    }
+
+    .inicio .contenido-inicio {
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    .inicio .contenido-inicio h1 {
+        font-size: 32px;
+    }
+
+    .inicio .contenido-inicio h2 {
+        font-size: 24px;
+    }
+
+    .inicio .contenido-inicio .contenido-imagen img {
+        width: 80%;
+    }
+}
+
 /*SECCION S O B R E M I*/
 .sobremi{
     background-color:brown;
@@ -251,6 +299,43 @@ header{
     border-radius: 50%;
     text-align: center;
 }
+@media screen and (max-width: 768px) {
+    .sobremi {
+        padding: 20px;
+        height: auto;
+        text-align: center;
+    }
+
+    .sobremi .fila {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sobremi .fila .inf {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .sobremi .fila .inf .contiene-intereses {
+        position: relative;
+        justify-content: center;
+    }
+
+    .sobremi .fila .inf .contiene-intereses .interes {
+        width: 80px;
+        height: 80px;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .sobremi h2 {
+        font-size: 36px;
+    }
+
+    .sobremi p {
+        font-size: 16px;
+    }
+}
 /*SECCION C U R R I C U L U M*/
 .Curriculum{
     background-color:brown;
@@ -329,6 +414,60 @@ header{
     margin-bottom: 22px;
     display: block;
 }
+@media screen and (max-width: 768px) {
+    .Curriculum {
+        padding: 20px;
+        height: auto;
+        text-align: center;
+    }
+
+    .Curriculum .fila {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Curriculum .fila .col {
+        width: 100%;
+        padding: 10px 0;
+        border: none;
+    }
+
+    .Curriculum .fila .izquierda, 
+    .Curriculum .fila .derecha {
+        border: none;
+    }
+
+    .Curriculum h2 {
+        font-size: 36px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .Curriculum {
+        padding: 20px;
+        height: auto;
+        text-align: center;
+    }
+
+    .Curriculum .fila {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Curriculum .fila .col {
+        width: 100%;
+        padding: 10px 0;
+        border: none;
+    }
+
+    .Curriculum .fila .izquierda, 
+    .Curriculum .fila .derecha {
+        border: none;
+    }
+
+    .Curriculum h2 {
+        font-size: 36px;
+    }
+}
 /*SECCION P O R T A F O L I O */
 .Portafolio{
     background-color:wheat;
@@ -385,7 +524,24 @@ header{
 .Portafolio .galeria .proyecto .overlay:hover h3{
     margin-bottom: 0px;
 }
+/* Media query para la sección Portafolio en pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+    .Portafolio {
+        padding: 20px;
+        height: auto;
+        text-align: center;
+    }
 
+    .Portafolio .galeria {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Portafolio .galeria .proyecto {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+}
 /*SECCION C O N T A C T O*/
 .Contacto{
     background-image: url(../imagenes/contact.jpg);
@@ -468,6 +624,36 @@ header{
     margin-right: 20px;
 
 }
+/* Media query para la sección Contacto en pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+    .Contacto {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .Contacto .fila {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Contacto .col {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .Contacto .col img {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .Contacto .col .inf {
+        position: relative;
+        top: auto;
+        left: auto;
+        max-width: 100%;
+        padding: 20px;
+    }
+}
 /*footer*/
 footer{
     background-color: brown;
@@ -490,5 +676,18 @@ footer .arriba{
     border-radius: 50%;
     line-height: 50px;
     font-size: 18px;
+}
+/* Media query para el footer en pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+    footer {
+        padding: 30px 0 20px 0;
+        text-align: center;
+    }
 
+    footer .arriba {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+        line-height: 40px;
+    }
 }
