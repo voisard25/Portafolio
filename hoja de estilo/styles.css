@@ -1,0 +1,490 @@
+header{
+    background:blanchedalmond;
+    position: fixed;
+    width:100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+}
+.logo{
+    font-family:'Righteous';
+    font-size: 36px;
+    color: brown;
+    text-decoration: none;
+}
+.contenedor-nav{
+    display: flex;
+    list-style: none;
+}
+.contenedor-lista{
+    text-decoration: none;
+    color:burlywood;
+    margin: 0 20px;
+    padding: 3px;
+    text-align: center;
+}
+.contenedor-lista:hover{
+    color:brown;
+    text-shadow: 2px 2px 4px black, -2px -2px 4px gray;
+}
+/*SECCION I N I C I O*/
+.inicio{
+    background: linear-gradient(to top, rgba(255, 239, 184, 0.8), rgba(255, 239, 184, 0.8)), url(../imagenes/fondo.jpg);
+    background-size: cover;
+    height: 100vh; /* Ocupa el 100% de la altura de la ventana del navegador */
+    color:white;
+    display: flex;
+    align-items: center;
+}
+.inicio .contenido-inicio{
+    padding: 20px;
+    background-color:brown;
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+}
+.inicio .contenido-inicio .contenido-imagen img{
+    margin-top: 40px;
+    border: 10px solid wheat;
+    display: block;
+    width: 100%;
+    margin: auto;
+    border-radius: 50%;
+    height: auto; /* Mantiene la proporción de la imagen */ 
+}
+.inicio .contenido-inicio h1{
+    margin-top: 40px;
+    font-size: 42px;
+    font-family:'Righteous';
+    color: wheat;
+}
+.inicio .contenido-inicio h2{
+    font-size: 30px;
+    font-weight:normal;
+    color: wheat;
+}
+.inicio .contenido-inicio .redes a{
+    color: wheat;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid wheat;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 4px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+.inicio .contenido-inicio .redes a:hover{
+    background-color: wheat;
+    color: brown;
+}
+/*SECCION S O B R E M I*/
+.sobremi{
+    background-color:brown;
+    color: wheat;
+    padding: 20px 5px;
+    margin: auto;
+    height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+}
+.sobremi h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 5px 0px;
+}
+.sobremi p{
+    font-size:18px;
+    line-height: 22px;
+    margin-bottom:5px ;
+}
+.sobremi strong{
+    color:wheat;
+    font-weight: bold;
+}
+.sobremi .fila{
+    display: flex;
+}
+.sobremi .fila .inf{
+    width: 50%;
+}
+.sobremi .fila .inf h3{
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+.sobremi .fila .inf ul{
+    list-style: none;
+}
+.sobremi .fila .inf ul li{
+    margin:12px 0px
+}
+.sobremi .fila .inf ul li strong{
+    display: inline-block;
+    color: wheat;
+    width: 130px;
+}
+.sobremi .fila .inf .contiene-intereses{
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 200px;
+    position: absolute;
+}
+.sobremi .fila .inf .contiene-intereses .interes{
+    width: 100px;
+    padding: 20px 50px;
+    height: 100px;
+    background-color: rgb(175, 65, 65);
+    border-radius: 10px;
+    margin: 0 15px 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+.sobremi .fila .inf .contiene-intereses .interes:hover{
+    background-color: wheat;
+    color: brown;
+}
+.sobremi .fila .inf .contiene-intereses .interes i{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.sobremi button{
+    cursor:pointer;
+    background-color: transparent;
+    border: 2px solid rgb(235, 233, 233);
+    width: fit-content;
+    display: block;
+    margin: auto;
+    padding: 5px 5px;
+    font-size: 16px;
+    color:rgb(235, 233, 233);
+    position: relative;
+    z-index: 10;
+}
+.sobremi button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: wheat;
+    z-index: -1;
+    transition: 1s;
+}
+.sobremi button:hover .overlay{
+    width: 100%;
+}
+/*SECCION H A B I L I D A D E S*/
+.Habilidades{
+    background-color:wheat;
+    color: brown;
+    padding: 30px 10px;
+    margin: auto;
+    height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+}
+.Habilidades h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+}
+.Habilidades .fila{
+    display: flex;
+}
+.Habilidades .fila .col{
+    width: 50%;
+    padding: 0 20px;
+}
+.Habilidades .fila .col h3{
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+.Habilidades .skill > span {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.Habilidades .skill .barra-skill {
+    height: 8px;
+    width: 100%;
+    background-color: white;
+    position: relative;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+.Habilidades .skill .progreso {
+    background-color: brown;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;  /* Para bordes redondeados en la barra */
+}
+
+.Habilidades .skill .barra-skill .porcentaje {
+    position: absolute;
+    top: -20px;
+    right: -15px;
+    font-size: 14px;
+    background-color: wheat;
+    padding: 2px 5px;
+    border-radius: 50%;
+    text-align: center;
+}
+/*SECCION C U R R I C U L U M*/
+.Curriculum{
+    background-color:brown;
+    color: wheat;
+    padding:20px 20px;
+    margin: auto;
+    height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+}
+.Curriculum h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+}
+.Curriculum .fila{
+    display: flex;
+}
+.Curriculum .fila .col{
+    width:49% ;
+    padding: 0 20px;
+
+}
+.Curriculum .fila .col h3{
+    font-size: 28px;
+    font-family: 'Righteous' ;
+    margin-bottom: 5px;
+}
+.Curriculum .fila .izquierda{
+    border-right: 1px solid wheat;
+}
+.Curriculum .fila .derecha{
+    border-left: 1px solid wheat;
+}
+.Curriculum .fila .itmderecho{
+    padding: 5px;
+    margin-bottom:7px ;
+    background-color:rgb(164, 66, 66) ;
+    position: relative;
+}
+.Curriculum .fila .itmizquierdo{
+    padding: 20px;
+    margin-bottom:30px ;
+    background-color:rgb(164, 66, 66) ;
+    position: relative;
+}
+.Curriculum .fila .itmizquierdo h4{
+    font-size: 20px ;
+    margin-bottom: 10px ;
+}
+.Curriculum .fila .itmderecho h4{
+    font-size: 20px;
+    margin-bottom: 10px ;
+}
+.Curriculum .fila .itmderecho .casa {
+    color: wheat;
+    font-size: 22px;
+    font-weight: bold ;
+    display: block;
+}
+.Curriculum .fila .itmizquierdo .casa{
+    color: wheat;
+    font-size: 22px;
+    font-weight: bold ;
+    display: block;
+}
+.Curriculum .fila .itmizquierdo .fecha{
+    display: block;
+    color:wheat;
+    margin-bottom: 10px;
+
+
+}
+.Curriculum .fila .itmderecho .fecha {
+    color: wheat;
+    margin-bottom: 22px;
+    display: block;
+}
+/*SECCION P O R T A F O L I O */
+.Portafolio{
+    background-color:wheat;
+    color: brown;
+    padding:30px 30px;
+    margin: auto;
+    height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+}
+.Portafolio h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+}
+.Portafolio .galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.Portafolio .galeria .proyecto{
+    position: relative;
+    max-width: 340px;
+    height: fit-content;
+    margin-right: 22px;
+    cursor: pointer;
+}
+.Portafolio .galeria .proyecto img{
+    width: 100%;
+    display: block;
+}
+.Portafolio .galeria .proyecto .overlay{
+    position:absolute;
+    top:0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: linear-gradient(rgba(210, 140, 90, 0.8), rgba(210, 140, 90, 0.8));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1s;
+    font-size: 18px;
+    letter-spacing:3px;
+    opacity: 0;
+}
+.Portafolio .galeria .proyecto .overlay h3{
+    margin-bottom: 20px;
+    transition: 1s;
+}
+.Portafolio .galeria .proyecto .overlay:hover{
+    opacity: 1;
+}
+.Portafolio .galeria .proyecto .overlay:hover h3{
+    margin-bottom: 0px;
+}
+
+/*SECCION C O N T A C T O*/
+.Contacto{
+    background-image: url(../imagenes/contact.jpg);
+    background-color: brown;
+    color: wheat;
+    padding: 50px 0;
+    max-width: 1100;
+    margin: auto;
+}
+.Contacto h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+}
+.Contacto .fila{
+    display:flex;
+}
+.Contacto .col{
+    width: 50%;
+    padding: 10px 50px;
+    position: relative;
+}
+.Contacto .col input, .Contacto .Col textarea {
+    width: 100% ;
+    padding: 18px;
+    display: block;
+    border: none;
+    margin-bottom: 20px;
+    background-color:wheat;
+    color: brown;
+    font-size: 18px;
+}
+.Contacto button{
+    cursor:pointer;
+    background-color: transparent;
+    border: 2px solid rgb(235, 233, 233);
+    width: fit-content;
+    display: block;
+    margin: auto;
+    padding: 5px 5px;
+    font-size: 16px;
+    color:rgb(235, 233, 233);
+    position: relative;
+    z-index: 10;
+}
+.Contacto button .overlay{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color:rgb(91, 5, 5);
+    z-index: -1;
+    transition: 1s;
+}
+.Contacto button:hover .overlay{
+    width: 100%;
+}
+.Contacto .col img{
+    width: 100%;
+}
+.Contacto .col .inf{
+    position: absolute;
+    top:40%;
+    background-color: brown;
+    padding: 30px;
+    max-width:350px;
+    left: 25%;
+    transition: translate (-50%, -50%);
+}
+.Contacto .col .inf ul{
+    list-style: none;
+}
+.Contacto .col .inf ul li{
+    margin-bottom: 20px;
+}
+.Contacto .col .inf ul li i{
+    color: wheat;
+    display: inline-block;
+    margin-right: 20px;
+
+}
+/*footer*/
+footer{
+    background-color: brown;
+    color:wheat;
+    padding: 50px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+footer .arriba{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: wheat;
+    color: brown;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 18px;
+
+}
