@@ -194,7 +194,7 @@ header{
 .Habilidades{
     background-color:wheat;
     color: brown;
-    padding: 30px 10px;
+    padding: 20px 5px;
     margin: auto;
     height: 100vh;
     width: 100%;
@@ -255,7 +255,7 @@ header{
 .Curriculum{
     background-color:brown;
     color: wheat;
-    padding:20px 20px;
+    padding:20px 5px;
     margin: auto;
     height: 100vh;
     width: 100%;
@@ -333,7 +333,7 @@ header{
 .Portafolio{
     background-color:wheat;
     color: brown;
-    padding:30px 30px;
+    padding:30px 5px;
     margin: auto;
     height: 100vh;
     width: 100%;
@@ -391,7 +391,7 @@ header{
     background-image: url(../imagenes/contact.jpg);
     background-color: brown;
     color: wheat;
-    padding: 50px 0;
+    padding: 20px 5px;;
     max-width: 1100;
     margin: auto;
 }
@@ -408,7 +408,7 @@ header{
     padding: 10px 50px;
     position: relative;
 }
-.Contacto .col input, .Contacto .Col textarea {
+.Contacto .col input, .Contacto .col textarea {
     width: 100% ;
     padding: 18px;
     display: block;
